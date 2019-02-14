@@ -1,0 +1,6 @@
+﻿  Source.cpp
+d:\c++\class works\2.14.2019 kr\2.14.2019 kr\source.cpp(88): error C3861: 'Filling': identifier not found
+d:\c++\class works\2.14.2019 kr\2.14.2019 kr\source.cpp(89): warning C4566: character represented by universal-character-name '\u0421' cannot be represented in the current code page (1252)
+d:\c++\class works\2.14.2019 kr\2.14.2019 kr\source.cpp(91): error C3861: 'AuditLogin': identifier not found
+d:\c++\class works\2.14.2019 kr\2.14.2019 kr\source.cpp(92): error C3861: 'PasswordAudit': identifier not found
+d:\c++\class works\2.14.2019 kr\2.14.2019 kr\source.cpp(93): error C3861: 'Audit': identifier not found

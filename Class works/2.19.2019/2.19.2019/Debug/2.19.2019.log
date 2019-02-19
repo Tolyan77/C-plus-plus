@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\c++\class works\2.19.2019\2.19.2019\source.cpp(90): error C2995: 'void Multiplication(T,T,T &)': function template has already been defined
+  d:\c++\class works\2.19.2019\2.19.2019\source.cpp(82): note: see declaration of 'Multiplication'
+d:\c++\class works\2.19.2019\2.19.2019\source.cpp(122): error C2065: 'Multiplication': undeclared identifier

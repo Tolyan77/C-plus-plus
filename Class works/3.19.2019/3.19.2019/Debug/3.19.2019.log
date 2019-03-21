@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\c++\class works\3.19.2019\3.19.2019\source.cpp(277): error C2065: 'u': undeclared identifier
+d:\c++\class works\3.19.2019\3.19.2019\source.cpp(278): error C2059: syntax error: '}'

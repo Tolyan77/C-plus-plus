@@ -1,20 +1,2 @@
 ﻿  Source.cpp
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(1): error C2014: команда препроцессора не должна начинаться с пробела
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(2): error C2143: синтаксическая ошибка: отсутствие ";" перед "using namespace"
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(2): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(79): error C2065: cout: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(80): error C2065: cin: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(81): error C2440: инициализация: невозможно преобразовать "char [255]" в "unsigned int"
-  e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(81): note: Не существует контекста, в котором такое преобразование возможно
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(82): error C3861: strlen: идентификатор не найден
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(84): error C2065: cout: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(84): error C2065: endl: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(89): error C2065: cout: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(89): error C2065: endl: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(92): error C2065: cout: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(96): error C3861: system: идентификатор не найден
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(108): error C2065: cout: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(108): error C2065: endl: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(113): error C2065: cout: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(113): error C2065: endl: необъявленный идентификатор
-e:\c plus plus\home works\17.03.2019 char\17.03.2019 char\source.cpp(117): error C3861: system: идентификатор не найден
+  17.03.2019 char.vcxproj -> E:\C plus plus\Home works\17.03.2019 char\Debug\17.03.2019 char.exe

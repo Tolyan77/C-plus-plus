@@ -1,119 +1,144 @@
-﻿﻿#include<iostream>
+﻿//Написати програму, яка отримує від користувача довільний набір cимволів, шифрує його та виводить на екран новоутворений рядок
+//.Для шифрування скористатись звичайними арифметичними операціями++, --,
+//збільшення або зменшення на якесь число тощо.Наприклад, при введенні ABА на екрані буде ВСВ.
+#include<iostream>
 using namespace std;
+void Encryption(char *pS)
+{
+	int choise = 0, rozmir = 0, text = 0;
+	int line = strlen(pS);
+	cout << "What size do you want to text shift?\n1 - Right\n2 - Left\n\t\tEnter: ";
+	cin >> choise;
+	cout << "How many positions to shift?\n\t\tEnter: ";
+	cin >> rozmir;
+	if (choise == 1)
+	{
+		for (int i = 0; i < line; i++)
+		{
+			if (int(pS[i]) + rozmir < 90 && (int(pS[i]) >= 65 && int(pS[i]) <= 90) || int(pS[i]) + rozmir < 122 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+			{
+				text = int(pS[i]) + rozmir;
+				cout << char(text);
+			}
+			else if (int(pS[i]) + rozmir > 90 || int(pS[i]) + rozmir > 122)
+			{
+				if (int(pS[i]) + rozmir > 90 && (int(pS[i]) >= 65 && int(pS[i]) <= 90))
+				{
+					text = 97 + ((int(pS[i]) + rozmir) - 91);
+					cout << char(text);
+				}
+				if (int(pS[i]) + rozmir > 122 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+				{
+					text = 65 + ((int(pS[i]) + rozmir) - 123);
+					cout << "\n\tResult : " << char(text);
+				}
+			}
+		}
+		cout << endl;
+	}
+	else if (choise == 2)
+	{
+		for (int i = 0; i < line; i++)
+		{
+			if (int(pS[i]) - rozmir > 65 && (int(pS[i]) >= 65 && int(pS[i]) <= 90) || int(pS[i]) - rozmir > 97 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+			{
+				text = int(pS[i]) - rozmir;
+				cout << char(text);
+			}
+			else if (int(pS[i]) - rozmir < 65 || int(pS[i]) - rozmir < 97)
+			{
+				if (int(pS[i]) - rozmir < 65 && (int(pS[i]) >= 65 && int(pS[i]) <= 90))
+				{
+					text = 123 - (rozmir - (int(pS[i]) - 65));
+					cout << char(text);
+				}
+				if (int(pS[i]) - rozmir < 97 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+				{
+					text = 91 - (rozmir - (int(pS[i]) - 97));
+					cout << "\n\tResult : " << char(text);
+				}
+			}
+		}
+		cout << endl;
+	}
+}
+void Decryption(char *pS)
+{
+	int choise = 0, rozmir = 0, text = 0;
+	int line = strlen(pS);
+	cout << "Where was it shift text?\n1. Right\n2. Left\n\t\tEnter: ";
+	cin >> choise;
+	cout << "How many positions to shift?\n\t\tEnter: ";
+	cin >> rozmir;
+	if (choise == 2)
+	{
+		for (int i = 0; i < line; i++)
+		{
+			if (int(pS[i]) + rozmir < 90 && (int(pS[i]) >= 65 && int(pS[i]) <= 90) || int(pS[i]) + rozmir < 122 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+			{
+				text = int(pS[i]) + rozmir;
+				cout << char(text);
+			}
+			else if (int(pS[i]) + rozmir > 90 || int(pS[i]) + rozmir > 122)
+			{
+				if (int(pS[i]) + rozmir > 90 && (int(pS[i]) >= 65 && int(pS[i]) <= 90))
+				{
+					text = 97 + ((int(pS[i]) + rozmir) - 91);
+					cout << char(text);
+				}
+				if (int(pS[i]) + rozmir > 122 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+				{
+					text = 65 + ((int(pS[i]) + rozmir) - 123);
+					cout << "\n\tResult : " << char(text);
+				}
+			}
+		}
+		cout << endl;
+	}
+	else if (choise == 1)
+	{
+		for (int i = 0; i < line; i++)
+		{
+			if (int(pS[i]) - rozmir > 65 && (int(pS[i]) >= 65 && int(pS[i]) <= 90) || int(pS[i]) - rozmir > 97 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+			{
+				text = int(pS[i]) - rozmir;
+				cout << char(text);
+			}
+			else if (int(pS[i]) - rozmir < 65 || int(pS[i]) - rozmir < 97)
+			{
+				if (int(pS[i]) - rozmir < 65 && (int(pS[i]) >= 65 && int(pS[i]) <= 90))
+				{
+					text = 123 - (rozmir - (int(pS[i]) - 65));
+					cout << char(text);
+				}
+				if (int(pS[i]) - rozmir < 97 && (int(pS[i]) >= 97 && int(pS[i]) <= 122))
+				{
+					text = 91 - (rozmir - (int(pS[i]) - 97));
+					cout << "\n\tResult : " << char(text);
+				}
+			}
+		}
+		cout << endl;
+	}
+}
 int main()
 {
-	//char str = 'A';
-	//cout << "'A' = " << str << endl;
-	//cout << sizeof(char) << endl;
-	//
-	//setlocale(LC_ALL, "");
-	//char STRHELLO[] = "ПРИВІТ";
-	//cout << "'STRHELLO' = " << STRHELLO << endl;
-	//for (int i = 0; i <= 255; i++)
-	//{
-	//	cout << "Symbol = " << i << " Charcode = " << (char)i << endl;
-	//}
-	//
-//	Написати програму, яка отримує від користувача довільний набір цифр(кодів) та виводить на екран новоутворений рядок символів.Наприклад, при введенні цифр 65 66 65 на екрані буде ABA
-	int number = 0;
-	bool g = true;
-	//while (g == true)
-	//{
-	//	cout << "\n\tEnter 300 to exit\n\tNumber 65 - 90 and 97 - 122\n\tEnter :";
-	//	cin >> number;
-	//	if (number >= 65 && number <= 90 || number >= 97 && number <= 122)
-	//	{
-	//		cout << "\n\t" << number << " = " << (char)number << endl;
-	//	}
-	//	else if (number == 300)
-	//	{
-	//		g = false;
-	//	}
-	//	else
-	//	{
-	//		cout << "ERROR!" << endl;
-	//	}
-	//}
-
-
-
-
-	//cout << "\n\tEnter num : ";
-	//cin >> number;
-	//int *arr = new int[number];
-	//bool GG = true;
-	//while (g == true)
-	//{
-	//	cout << "\n\tEnter 300 to exit\n\tNumber 65 - 90 and 97 - 122" << endl;
-	//	for (int i = 0; i < number; i++)
-	//	{
-	//		cout << "\n\tEnter number arr #" << i << " = ";
-	//		cin >> arr[i];
-	//		if (arr[i] == 300)
-	//		{
-	//			g = false;
-	//			system("pause");
-	//			return 0;
-	//		}
-	//		else if (arr[i] < 65 || arr[i]>90 && arr[i] < 97 || arr[i]>122)
-	//		{
-	//			GG = false;
-	//		}
-	//	}
-	//	if (GG == true)
-	//	{
-	//		for (int i = 0; i < number; i++)
-	//		{
-	//			cout << "\n\t" << arr[i] << " = " << (char)arr[i] << endl;
-	//		}
-	//	}
-	//	else if (GG == false)
-	//	{
-	//		cout << "\n\tEERROR" << endl;
-	//	}
-	//}
-	/*Написати програму, яка отримує від користувача довільний набір cимволів та виводить на екран рядок кодів символів, по суті, закодований рядок.Наприклад, при введенні ABA на екрані буде 65 66 65.
-		Примітка!Для вводу символів скористайтеся властивістю обєкта cin вводити кілька значень обночасно(cin >> a >> b;)
-*/
-	char str[255];
-	cout << "\n\tEnter char : ";
-	cin >> str;
-	int *arr = new int[str];
-	for (int i = 0; i < strlen(str); i++)
+	int choise = 0;
+	char str[255] = "",*pS = str;
+	cout << "1. Encryption\t\t2. Decryption\n\t\tEnter :";
+	cin >> choise;
+	if (choise == 1)
 	{
-		cout << "\t" << int(str[i]) << endl;
+		cout << "Enter text: ";
+		cin >> str;
+		Encryption(pS);
 	}
-	bool GG = true;
-	while (g == true)
+	else if (choise == 2)
 	{
-		cout << "\n\tEnter 300 to exit\n\tNumber 65 - 90 and 97 - 122" << endl;
-		for (int i = 0; i < number; i++)
-		{
-			cout << "\n\tEnter number arr #" << i << " = ";
-			if (arr[i] == 300)
-			{
-				g = false;
-				system("pause");
-				return 0;
-			}
-			else if (arr[i] < 65 || arr[i]>90 && arr[i] < 97 || arr[i]>122)
-			{
-				GG = false;
-			}
-		}
-		if (GG == true)
-		{
-			for (int i = 0; i < number; i++)
-			{
-				cout << "\n\t" << arr[i] << " = " << (char)arr[i] << endl;
-			}
-		}
-		else if (GG == false)
-		{
-			cout << "\n\tEERROR" << endl;
-		}
+		cout << "Enter ciphertext: ";
+		cin >> str;
+		Decryption(pS);
 	}
-	char name[255] = "";
 	system("pause");
 	return 0;
 }

@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\kulinich\source\repos\4.9.2019 file\4.9.2019 file\source.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+LINK : fatal error LNK1168: cannot open C:\Users\Kulinich\source\repos\4.9.2019 File\Debug\4.9.2019 File.exe for writing

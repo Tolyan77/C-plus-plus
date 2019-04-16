@@ -1,2 +1,2 @@
 #pragma once
-void DeleteElem(int *&arr, int size);
+void DeleteElem(int *&arr, int &size);

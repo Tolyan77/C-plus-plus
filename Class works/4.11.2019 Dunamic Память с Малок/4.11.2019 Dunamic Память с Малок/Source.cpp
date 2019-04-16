@@ -86,8 +86,6 @@ int main() {
 		}
 		else if (choise == 2)
 		{
-			Size--;
-			ptr = (int*)realloc(ptr, Size * sizeof(int));
 			DeleteElem(ptr, Size);
 		}
 		else if (choise == 3)

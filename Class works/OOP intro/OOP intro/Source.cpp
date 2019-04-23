@@ -87,60 +87,107 @@ public:
 };
 int main()
 {
-	int choise = 0;
-	cout << "\n\t1.Open account\n\t2.Go to the account\n\t0.Exit\n\tEnter : ";
-	cin >> choise;
-	if (choise == 1)
+	int choise = 0, myMoney = 0, money = 0;
+	bool open = false, exit1 = true, exit2 = true;
+	string currerncyNew;
+	while (exit1 == true)
 	{
-		string currerncyNew;
-		cout << "\n\tEnter currerncy (R, G, E, $) : ";
-		cin >> currerncyNew;
 		Account PersonNew;
-		PersonNew.numberR = 33333333;
-		PersonNew.money = 0;
-		PersonNew.currency = currerncyNew;
-		PersonNew.ShowInfo();
-	}
-	else if (choise == 2)
-	{
-		int money = 0;
-		Account PersonNew;
-		PersonNew.ShowInfo();
-		cout << "\n\t1.Add currency\n\t2.take the currency\n\t3.Exit";
-		cout << choise;
+		cout << "\n\t1.Open my account\n\t2.Go to the account\n\t3.Open all account\n\t0.Exit\n\tEnter : ";
+		cin >> choise;
 		if (choise == 1)
-		{
-			cout << "\n\tEnter money : ";
-			cin >> money;
-			Account PersonNew;
-			PersonNew.money = 0 + money;
-		}
-		else if (choise == 2)
-		{
-			cout << "\n\tEnter money : ";
-			cin >> money;
-			if (money < PersonNew.money)
+		{	
+			if (open != true)
 			{
-				cout << "Error" << endl;
+				system("CLS");
+				cout << "\n\tEnter currerncy (R, G, E, $, etc.) : ";
+				cin >> currerncyNew;
+				PersonNew.numberR = 33333333;
+				PersonNew.money = myMoney;
+				PersonNew.currency = currerncyNew;
+				PersonNew.ShowInfo();
+				open = true;
 			}
-
-			Account PersonNew;
-			PersonNew.money = 0 - money;
+			else
+			{
+				cout << "\n\tYou have already created your account!!!" << endl;
+			}
 		}
+		else if (choise == 2 && open == true)
+		{
+			system("CLS");
+			while (exit2 == true)
+			{
+				PersonNew.currency = currerncyNew;
+				PersonNew.ShowInfo();
+				cout << "\n\t1.Add currency\n\t2.Take the currency\n\t0.Exit\n\tEnter :";
+				cin >> choise;
+				if (choise == 1)
+				{
+					cout << "\n\tEnter money : ";
+					cin >> money;
+					myMoney += money;
+					PersonNew.money = myMoney;
+				}
+				else if (choise == 2)
+				{
+					cout << "\n\tEnter money : ";
+					cin >> money;
+					if (money > myMoney)
+					{
+						cout << "\n\t\t\t\t\tError" << endl;
+					}
+					else {
+						myMoney -= money;
+						PersonNew.money = myMoney;
+					}
+				}
+				else if (choise == 0)
+				{
+					system("CLS");
+					exit2 = false;
+				}
+				else {
+					cout << "\n\tOkey, repeat" << endl;
+				}
+			}
+		}
+		else if (choise == 3)
+		{
+			system("CLS");
+			Account Person1;
+			Person1.numberR = 11111111;
+			Person1.money = 10;
+			Person1.currency = "GRN";
+			Person1.ShowInfo();
+
+			Account Person2;
+			Person2.numberR = 22222222;
+			Person2.money = 55;
+			Person2.currency = "$";
+			Person2.ShowInfo();
+			if (open == true)
+			{
+				Account PersonNew;
+				PersonNew.numberR = 33333333;
+				PersonNew.money = myMoney;
+				PersonNew.currency = currerncyNew;
+				PersonNew.ShowInfo();
+			}
+		}
+		else if (choise == 0)
+		{
+			system("CLS");
+			exit1 = false;
+		}
+		else
+		{
+			system("CLS");
+			cout << "\n\tOkey, repeat" << endl;
 		}
 	}
-	Account Person1;
-	Person1.numberR = 11111111;
-	Person1.money = 10;
-	Person1.currency = "GRN";
-	Person1.ShowInfo();
-	
-	Account Person2;
-	Person2.numberR = 22222222;
-	Person2.money = 55;
-	Person2.currency = "$";
-	Person2.ShowInfo();
-
+	cout << "\n\tBAY ;)" << endl;
 	system("pause");
 	return 0;
 }
+

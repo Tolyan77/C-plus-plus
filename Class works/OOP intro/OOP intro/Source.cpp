@@ -87,14 +87,59 @@ public:
 };
 int main()
 {
+	int choise = 0;
+	cout << "\n\t1.Open account\n\t2.Go to the account\n\t0.Exit\n\tEnter : ";
+	cin >> choise;
+	if (choise == 1)
+	{
+		string currerncyNew;
+		cout << "\n\tEnter currerncy (R, G, E, $) : ";
+		cin >> currerncyNew;
+		Account PersonNew;
+		PersonNew.numberR = 33333333;
+		PersonNew.money = 0;
+		PersonNew.currency = currerncyNew;
+		PersonNew.ShowInfo();
+	}
+	else if (choise == 2)
+	{
+		int money = 0;
+		Account PersonNew;
+		PersonNew.ShowInfo();
+		cout << "\n\t1.Add currency\n\t2.take the currency\n\t3.Exit";
+		cout << choise;
+		if (choise == 1)
+		{
+			cout << "\n\tEnter money : ";
+			cin >> money;
+			Account PersonNew;
+			PersonNew.money = 0 + money;
+		}
+		else if (choise == 2)
+		{
+			cout << "\n\tEnter money : ";
+			cin >> money;
+			if (money < PersonNew.money)
+			{
+				cout << "Error" << endl;
+			}
 
+			Account PersonNew;
+			PersonNew.money = 0 - money;
+		}
+		}
+	}
 	Account Person1;
 	Person1.numberR = 11111111;
 	Person1.money = 10;
 	Person1.currency = "GRN";
 	Person1.ShowInfo();
-
-
+	
+	Account Person2;
+	Person2.numberR = 22222222;
+	Person2.money = 55;
+	Person2.currency = "$";
+	Person2.ShowInfo();
 
 	system("pause");
 	return 0;

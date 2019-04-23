@@ -1,2 +1,63 @@
 ﻿  Source.cpp
-  OOP intro.vcxproj -> D:\C++\Class works\OOP intro\Debug\OOP intro.exe
+d:\c++\class works\oop intro\oop intro\source.cpp(133): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(133): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(133): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(133): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(133): error C2371: 'Person1': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(132): note: see declaration of 'Person1'
+d:\c++\class works\oop intro\oop intro\source.cpp(133): error C2146: syntax error: missing ';' before identifier 'numberR'
+d:\c++\class works\oop intro\oop intro\source.cpp(134): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(134): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(134): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(134): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(134): error C2371: 'Person1': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(132): note: see declaration of 'Person1'
+d:\c++\class works\oop intro\oop intro\source.cpp(134): error C2146: syntax error: missing ';' before identifier 'money'
+d:\c++\class works\oop intro\oop intro\source.cpp(135): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(135): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(135): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(135): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(135): error C2371: 'Person1': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(132): note: see declaration of 'Person1'
+d:\c++\class works\oop intro\oop intro\source.cpp(135): error C2146: syntax error: missing ';' before identifier 'currency'
+d:\c++\class works\oop intro\oop intro\source.cpp(136): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(136): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(136): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(136): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(136): error C2371: 'Person1': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(132): note: see declaration of 'Person1'
+d:\c++\class works\oop intro\oop intro\source.cpp(136): error C2146: syntax error: missing ';' before identifier 'ShowInfo'
+d:\c++\class works\oop intro\oop intro\source.cpp(139): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(139): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(139): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(139): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(139): error C2371: 'Person2': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(138): note: see declaration of 'Person2'
+d:\c++\class works\oop intro\oop intro\source.cpp(139): error C2146: syntax error: missing ';' before identifier 'numberR'
+d:\c++\class works\oop intro\oop intro\source.cpp(140): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(140): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(140): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(140): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(140): error C2371: 'Person2': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(138): note: see declaration of 'Person2'
+d:\c++\class works\oop intro\oop intro\source.cpp(140): error C2146: syntax error: missing ';' before identifier 'money'
+d:\c++\class works\oop intro\oop intro\source.cpp(141): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(141): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(141): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(141): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(141): error C2371: 'Person2': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(138): note: see declaration of 'Person2'
+d:\c++\class works\oop intro\oop intro\source.cpp(141): error C2146: syntax error: missing ';' before identifier 'currency'
+d:\c++\class works\oop intro\oop intro\source.cpp(142): error C3927: '->': trailing return type is not allowed after a non-function declarator
+d:\c++\class works\oop intro\oop intro\source.cpp(142): error C3484: syntax error: expected '->' before the return type
+d:\c++\class works\oop intro\oop intro\source.cpp(142): error C3613: missing return type after '->' ('int' assumed)
+d:\c++\class works\oop intro\oop intro\source.cpp(142): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(142): error C2371: 'Person2': redefinition; different basic types
+  d:\c++\class works\oop intro\oop intro\source.cpp(138): note: see declaration of 'Person2'
+d:\c++\class works\oop intro\oop intro\source.cpp(142): error C2146: syntax error: missing ';' before identifier 'ShowInfo'
+d:\c++\class works\oop intro\oop intro\source.cpp(144): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\c++\class works\oop intro\oop intro\source.cpp(144): error C2365: 'system': redefinition; previous definition was 'function'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(1218): note: see declaration of 'system'
+d:\c++\class works\oop intro\oop intro\source.cpp(145): error C2059: syntax error: 'return'
+d:\c++\class works\oop intro\oop intro\source.cpp(146): error C2059: syntax error: '}'
+d:\c++\class works\oop intro\oop intro\source.cpp(146): error C2143: syntax error: missing ';' before '}'

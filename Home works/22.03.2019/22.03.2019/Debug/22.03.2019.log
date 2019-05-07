@@ -1,0 +1,6 @@
+﻿  Source.cpp
+e:\c plus plus\home works\22.03.2019\22.03.2019\source.cpp(11): warning C4018: <: несоответствие типов со знаком и без знака
+e:\c plus plus\home works\22.03.2019\22.03.2019\source.cpp(18): warning C4018: <: несоответствие типов со знаком и без знака
+e:\c plus plus\home works\22.03.2019\22.03.2019\source.cpp(22): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+e:\c plus plus\home works\22.03.2019\22.03.2019\source.cpp(25): warning C4018: <: несоответствие типов со знаком и без знака
+  22.03.2019.vcxproj -> E:\C plus plus\Home works\22.03.2019\Debug\22.03.2019.exe

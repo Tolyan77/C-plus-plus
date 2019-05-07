@@ -26,7 +26,7 @@ int Col()
 	cin >> col;
 	return col;
 }
-void Filling(int **&arr, int col, int row)
+void Filling(int **arr, int col, int row)
 {
 	for (int i = 0; i < row; i++)
 	{
@@ -36,7 +36,7 @@ void Filling(int **&arr, int col, int row)
 		}
 	}
 }
-void Print(int **&arr, int col, int row)
+void Print(int **arr, int col, int row)
 {
 	for (int i = 0; i < row; i++)
 	{
@@ -54,17 +54,17 @@ int Menu()
 	cin >> choise;
 	return choise;
 }
-void NewRow(int **&arr, int col, int row)
+void NewRow(int **arr, int col, int row)
 {
-	int **arrN = new int*[col + 1];
-	
-	for (int i = 0; i < row + 1; i++)
+	int **arrN = new int*[row + 1];
+
+	for (int i = 0; i < col + 1; i++)
 	{
-		arrN[i] = new int[col];
+		arrN[i] = new int[row];
 	}
-	for (int i = 0; i < row; i++)
+	for (int i = 0; i < col; i++)
 	{
-		for (int j = 0; j < col; j++)
+		for (int j = 0; j < row; j++)
 		{
 			arrN[i][j] = arr[i][j];
 		}
@@ -73,7 +73,12 @@ void NewRow(int **&arr, int col, int row)
 	{
 		arrN[col + 1][i] = rand() % 100;
 	}
+	for (int i = 0; i < col; i++) 
+	{
+		delete[] arr[i];
+    }
 	delete[] arr;
+	arr = new int*[row + 1];
 	arr = arrN;
 }
 void AdditionPlus(int *&arr, int const size)
@@ -95,10 +100,10 @@ int main()
 	srand(unsigned(time(NULL)));
 	
 	int row = Row(), col = Col(), choise = 0;
-	int **arr = new int*[col];
-	for (int i = 0; i < row; i++)
+	int **arr = new int*[row];
+	for (int i = 0; i < col; i++)
 	{
-		arr[i] = new int[col];
+		arr[i] = new int[row];
 	}
 	Filling(arr, col, row);
 	Print(arr, col, row);
@@ -106,7 +111,7 @@ int main()
 	if (choise == 1)
 	{
 		NewRow(arr, col, row);
-		row++;
+		col++;
 		Print(arr, col, row);
 	}
 	else if (choise == 0)
